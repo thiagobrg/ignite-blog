@@ -1,1 +1,69 @@
-// TODO
+.main {
+  max-width: 700px;
+  margin: 40px auto;
+
+  ul {
+    width: 700px;
+    list-style-type: none;
+
+    li {
+      h3 {
+        color: var(--heading);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.89px;
+        text-align: justify;
+      }
+
+      h4 {
+        color: var(--body);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.78px;
+        text-align: justify;
+
+        margin-top: 8px;
+      }
+
+      .postInfo {
+        display: flex;
+        flex-direction: row;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--info);
+
+        margin-top: 24px;
+
+        .createdAt {
+          time {
+            margin-left: 8px;
+          }
+        }
+        .author {
+          margin-left: 24px;
+
+          span {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    li + li {
+      margin-top: 48px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+
+    color: var(--highlight);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    margin-top: 64px;
+    border:none;
+    background: inherit;
+  }
+}
